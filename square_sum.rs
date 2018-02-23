@@ -112,7 +112,7 @@ fn get_next_reach(reach: &Vec<i32>, pick: i32) -> Vec<i32> {
 	let mut next_reach: Vec<i32> = Vec::new();
 
 	for j in 0..reach.len() {
-		next_reach.push(reach[j] - 1);
+		next_reach.push(reach[j]);
 	}
 
 	next_reach[pick as usize] = 0;
